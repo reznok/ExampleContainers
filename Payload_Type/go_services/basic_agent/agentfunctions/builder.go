@@ -223,7 +223,7 @@ func build(payloadBuildMsg agentstructs.PayloadBuildMessage) agentstructs.Payloa
 	})
 	cmd := exec.Command("/bin/bash")
 	cmd.Stdin = strings.NewReader(command)
-	cmd.Dir = "./poseidon/agent_code/"
+	// cmd.Dir = "./poseidon/agent_code/"
 	var stdout bytes.Buffer
 	var stderr bytes.Buffer
 	cmd.Stdout = &stdout
